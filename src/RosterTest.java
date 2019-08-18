@@ -42,6 +42,7 @@ public class RosterTest {
     @Test
     public void getStudentByMatriculation() {
         Student enrolledStudent = roster.getStudentByMatriculation("s0189034");
+        assertNotNull(enrolledStudent);
         assertTrue("Matriculation not found",enrolledStudent.getMatriculationNbr().equals("s0189034"));
     }
 
